@@ -1,0 +1,286 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignesh S - Full Stack Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a0a23;
+            color: #f5f6f5;
+        }
+        .header {
+            background: rgba(10, 10, 35, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(10, 10, 35, 0.8)), url('https://via.placeholder.com/1920x1080?text=Tech+Innovation');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .cta-btn {
+            background: #00d9ff;
+            color: #0a0a23;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo text-2xl font-extrabold text-cyan-400">Vignesh S</div>
+        <div class="nav space-x-6 hidden md:flex">
+            <a href="#home" class="text-white hover:text-cyan-400 transition duration-300">Home</a>
+            <a href="#experience" class="text-white hover:text-cyan-400 transition duration-300">Experience</a>
+            <a href="#skills" class="text-white hover:text-cyan-400 transition duration-300">Skills</a>
+            <a href="#projects" class="text-white hover:text-cyan-400 transition duration-300">Projects</a>
+            <a href="#education" class="text-white hover:text-cyan-400 transition duration-300">Education</a>
+            <a href="#contact" class="text-white hover:text-cyan-400 transition duration-300">Contact</a>
+        </div>
+        <div class="md:hidden">
+            <button id="menu-btn" class="text-white">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-black bg-opacity-75 z-50 flex flex-col items-center justify-center space-y-6 text-white text-xl">
+        <a href="#home" class="hover:text-cyan-400 transition duration-300">Home</a>
+        <a href="#experience" class="hover:text-cyan-400 transition duration-300">Experience</a>
+        <a href="#skills" class="hover:text-cyan-400 transition duration-300">Skills</a>
+        <a href="#projects" class="hover:text-cyan-400 transition duration-300">Projects</a>
+        <a href="#education" class="hover:text-cyan-400 transition duration-300">Education</a>
+        <a href="#contact" class="hover:text-cyan-400 transition duration-300">Contact</a>
+        <button id="close-menu" class="text-white">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-cyan-400 drop-shadow-lg">Full Stack Developer</h1>
+        <p class="text-xl md:text-2xl mt-4">Building Innovative Solutions for Commercial Taxes & E-Governance</p>
+        <button class="cta-btn mt-6">Explore My Journey</button>
+    </div>
+
+    <!-- Objective Section -->
+    <section class="objective py-20 px-4" id="objective">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-cyan-400 mb-10">Objective</h2>
+        <p class="text-lg md:text-xl mx-auto w-full md:w-4/5 max-w-3xl">To leverage my expertise in full stack development to create innovative and efficient solutions that drive business success and enhance user experiences.</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience py-20 px-4" id="experience">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-cyan-400 mb-10">Experience</h2>
+        <div class="exp-card bg-white bg-opacity-10 backdrop-blur-md p-6 mx-auto mb-6 w-full md:w-4/5 max-w-3xl rounded-lg transform transition-transform duration-500 hover:scale-105">
+            <h3 class="text-xl md:text-2xl font-bold">Zigma Technologies Pvt Ltd - Commercial Tax Department</h3>
+            <p class="italic">Java Full Stack Developer | Jan 2025 - Present</p>
+            <p>Developing GST & VAT portals with Java Spring Boot, JSP, and PostgreSQL. Designed an Employee Management System with role-based access and progress tracking.</p>
+        </div>
+        <div class="exp-card bg-white bg-opacity-10 backdrop-blur-md p-6 mx-auto mb-6 w-full md:w-4/5 max-w-3xl rounded-lg transform transition-transform duration-500 hover:scale-105">
+            <h3 class="text-xl md:text-2xl font-bold">KPMG India, Chennai</h3>
+            <p class="italic">Full Stack Developer (Analyst) | Sep 2022 - Jan 2025</p>
+            <p>Led SFDB development for Tamil Nadu Government using ReactJS, Node.js, and Java Spring Boot. Centralized data with PostgreSQL and earned Young Gun Award.</p>
+        </div>
+        <div class="exp-card bg-white bg-opacity-10 backdrop-blur-md p-6 mx-auto mb-6 w-full md:w-4/5 max-w-3xl rounded-lg transform transition-transform duration-500 hover:scale-105">
+            <h3 class="text-xl md:text-2xl font-bold">Temenos, Chennai</h3>
+            <p class="italic">Product Analyst Trainee (Intern) | Jul 2022 - Aug 2022</p>
+            <p>Specialized in Temenos Banking Software Lending Module, resolving client issues via JIRA.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills py-20 px-4" id="skills">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-cyan-400 mb-10">Skills</h2>
+        <div class="skill-grid flex justify-center gap-6 flex-wrap">
+            <div class="skill-card bg-indigo-900 p-6 w-32 md:w-40 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105">
+                <i class="fab fa-java text-3xl md:text-4xl mb-2"></i>
+                <p class="text-sm md:text-base">Java Spring Boot</p>
+            </div>
+            <div class="skill-card bg-indigo-900 p-6 w-32 md:w-40 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105">
+                <i class="fab fa-react text-3xl md:text-4xl mb-2"></i>
+                <p class="text-sm md:text-base">ReactJS & Redux</p>
+            </div>
+            <div class="skill-card bg-indigo-900 p-6 w-32 md:w-40 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105">
+                <i class="fab fa-node-js text-3xl md:text-4xl mb-2"></i>
+                <p class="text-sm md:text-base">Node.js</p>
+            </div>
+            <div class="skill-card bg-indigo-900 p-6 w-32 md:w-40 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105">
+                <i class="fas fa-database text-3xl md:text-4xl mb-2"></i>
+                <p class="text-sm md:text-base">PostgreSQL</p>
+            </div>
+            <div class="skill-card bg-indigo-900 p-6 w-32 md:w-40 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105">
+                <i class="fas fa-cubes text-3xl md:text-4xl mb-2"></i>
+                <p class="text-sm md:text-base">Microservices</p>
+            </div>
+            <div class="skill-card bg-indigo-900 p-6 w-32 md:w-40 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105">
+                <i class="fas fa-lock text-3xl md:text-4xl mb-2"></i>
+                <p class="text-sm md:text-base">JWT & SHA-256</p>
+            </div>
+            <div class="skill-card bg-indigo-900 p-6 w-32 md:w-40 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105">
+                <i class="fab fa-js-square text-3xl md:text-4xl mb-2"></i>
+                <p class="text-sm md:text-base">MERN Stack</p>
+            </div>
+            <div class="skill-card bg-indigo-900 p-6 w-32 md:w-40 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105">
+                <i class="fas fa-server text-3xl md:text-4xl mb-2"></i>
+                <p class="text-sm md:text-base">Apache Tomcat</p>
+            </div>
+            <div class="skill-card bg-indigo-900 p-6 w-32 md:w-40 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105">
+                <i class="fab fa-git-alt text-3xl md:text-4xl mb-2"></i>
+                <p class="text-sm md:text-base">Git & Linux</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects py-20 px-4" id="projects">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-cyan-400 mb-10">Projects</h2>
+        <div class="project-card bg-white bg-opacity-5 p-6 mx-auto mb-6 w-full md:w-4/5 max-w-3xl rounded-lg transform transition-transform duration-500 hover:scale-105">
+            <h3 class="text-xl md:text-2xl font-bold">Employee Management System</h3>
+            <p>Single-handedly built a form-based system for the Commercial Tax Department with progress tracking and role-based access.</p>
+            <p><strong>Tech:</strong> Java Spring Boot, JSP, PostgreSQL</p>
+        </div>
+        <div class="project-card bg-white bg-opacity-5 p-6 mx-auto mb-6 w-full md:w-4/5 max-w-3xl rounded-lg transform transition-transform duration-500 hover:scale-105">
+            <h3 class="text-xl md:text-2xl font-bold">SFDB (Makkal Sevai Portal)</h3>
+            <p>Developed a citizen portal with SSO and Aadhar authentication for Tamil Nadu residents.</p>
+            <p><strong>Tech:</strong> ReactJS, Redux, Java Spring Boot, PostgreSQL</p>
+        </div>
+        <div class="project-card bg-white bg-opacity-5 p-6 mx-auto mb-6 w-full md:w-4/5 max-w-3xl rounded-lg transform transition-transform duration-500 hover:scale-105">
+            <h3 class="text-xl md:text-2xl font-bold">Arogyasri Healthcare Platform</h3>
+            <p>Built EHS module and renewal portal with PAYUBIZ payment integration.</p>
+            <p><strong>Tech:</strong> ReactJS, Java Spring Boot, PostgreSQL</p>
+        </div>
+        <div class="project-card bg-white bg-opacity-5 p-6 mx-auto mb-6 w-full md:w-4/5 max-w-3xl rounded-lg transform transition-transform duration-500 hover:scale-105">
+            <h3 class="text-xl md:text-2xl font-bold">Neengal Nalama</h3>
+            <p>Developed REST APIs for Tamil Nadu e-Governance with JWT authorization.</p>
+            <p><strong>Tech:</strong> Java Spring Boot, PostgreSQL</p>
+        </div>
+        <div class="project-card bg-white bg-opacity-5 p-6 mx-auto mb-6 w-full md:w-4/5 max-w-3xl rounded-lg transform transition-transform duration-500 hover:scale-105">
+            <h3 class="text-xl md:text-2xl font-bold">APSCHE - Industry Institute Connect</h3>
+            <p>Created modules with dynamic ReactJS frontend and Java Spring Boot APIs.</p>
+            <p><strong>Tech:</strong> ReactJS, Redux, Java Spring Boot, PostgreSQL</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education py-20 px-4" id="education">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-cyan-400 mb-10">Education</h2>
+        <div class="edu-card bg-white bg-opacity-10 p-6 mx-auto mb-6 w-full md:w-4/5 max-w-2xl rounded-lg transform transition-transform duration-500 hover:scale-105">
+            <h3 class="text-xl md:text-2xl font-bold">Velammal Engineering College (Anna University)</h3>
+            <p class="italic">B.E. Computer Science | 2018 - 2022 | 9/10 CGPA</p>
+        </div>
+        <div class="edu-card bg-white bg-opacity-10 p-6 mx-auto mb-6 w-full md:w-4/5 max-w-2xl rounded-lg transform transition-transform duration-500 hover:scale-105">
+            <h3 class="text-xl md:text-2xl font-bold">Subramaniya Bharathi HSS</h3>
+            <p class="italic">12th | 2017 - 2018 | 86%</p>
+            <p class="italic">10th | 2015 - 2016 | 94%</p>
+        </div>
+    </section>
+
+    <!-- Achievements & Contact -->
+    <section class="achievements py-20 px-4">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-cyan-400 mb-10">Achievements</h2>
+        <div class="ach-card bg-white bg-opacity-10 p-6 mx-auto mb-6 w-full md:w-4/5 max-w-2xl rounded-lg transform transition-transform duration-500 hover:scale-105">
+            <p>Young Gun Award (Jan-Mar 2023) - KPMG India</p>
+            <p>Certificates: Android App Development (Internshala), Blockchain Hyperledger</p>
+        </div>
+    </section>
+
+    <footer class="footer py-10 bg-gray-900 text-center border-t border-cyan-400" id="contact">
+        <p class="mb-4">📞 9786238172 | ✉️ vigneshsurela@gmail.com</p>
+        <p class="mb-4"><a href="https://www.linkedin.com/in/vignesh-s-2b1930183" class="text-cyan-400 hover:underline">LinkedIn</a></p>
+        <p class="mb-4">Languages: Tamil, English, Telugu, Hindi | DOB: 26/11/2000</p>
+        <p>© 2025 Vignesh S</p>
+    </footer>
+
+    <!-- GSAP and ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+     <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Header Animation
+        gsap.from(".header", { y: -100, opacity: 0, duration: 1, ease: "power3.out" });
+
+        // Hero Animation
+        gsap.from(".hero h1, .hero p, .hero .cta-btn", {
+            y: 100,
+            opacity: 0,
+            duration: 1.5,
+            stagger: 0.3,
+            ease: "power3.out"
+        });
+
+        // Scroll Animations for Sections
+        gsap.utils.toArray("section").forEach(section => {
+            gsap.from(section.children, {
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out"
+            });
+        });
+
+        // 3D Effects for Cards
+        document.querySelectorAll(".exp-card, .skill-card, .project-card").forEach(card => {
+            card.addEventListener("mouseenter", () => {
+                gsap.to(card, {
+                    rotationY: 15,
+                    rotationX: -10,
+                    scale: 1.05,
+                    duration: 0.5,
+                    ease: "power3.out"
+                });
+            });
+            card.addEventListener("mouseleave", () => {
+                gsap.to(card, {
+                    rotationY: 0,
+                    rotationX: 0,
+                    scale: 1,
+                    duration: 0.5,
+                    ease: "power3.out"
+                });
+            });
+        });
+
+        // CTA Button Glow
+        const ctaBtn = document.querySelector(".cta-btn");
+        gsap.to(ctaBtn, {
+            boxShadow: "0 0 20px rgba(0, 217, 255, 0.7)",
+            duration: 1,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut"
+        });
+    </script>
+</body>
+</html>
