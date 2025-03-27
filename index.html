@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vignesh S - Full Stack Developer Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -46,6 +47,23 @@
             cursor: pointer;
             box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
         }
+        .objective-text {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+            margin-top: 1rem; /* Add some margin for spacing */
+        }
+        .objective-text:hover {
+            transform: rotateY(10deg) rotateX(5deg);
+        }
+		.profile-image {
+		width: 250px;  /* Increase size */
+		height: 250px; /* Maintain aspect ratio */
+		object-fit: cover; /* Ensures the image does not stretch */
+		border-radius: 50%; /* Keeps it circular */
+		margin-top: 20px;
+		}
+
     </style>
 </head>
 <body>
@@ -82,16 +100,15 @@
 
     <!-- Hero Section -->
     <div class="hero" id="home">
-        <h1 class="text-4xl md:text-6xl font-extrabold text-cyan-400 drop-shadow-lg">Full Stack Developer</h1>
-        <p class="text-xl md:text-2xl mt-4">Building Innovative Solutions for Commercial Taxes & E-Governance</p>
-        <button class="cta-btn mt-6">Explore My Journey</button>
-    </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-cyan-400 drop-shadow-lg mt-6">Full Stack Developer</h1>
+        <p class="text-xl md:text-2xl mt-2">Building Innovative Solutions for Commercial Taxes & E-Governance</p>
+        
+        <!-- Image Placeholder -->
+	   <img src="c:\users\vigne\onedrive\desktop\my_image.jpeg" alt="Your Image" class="rounded-full mb-6 profile-image" />
+		<button class="cta-btn" onclick="document.getElementById('experience').scrollIntoView({ behavior: 'smooth' });">Explore My Journey</button>
 
-    <!-- Objective Section -->
-    <section class="objective py-20 px-4" id="objective">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-cyan-400 mb-10">Objective</h2>
-        <p class="text-lg md:text-xl mx-auto w-full md:w-4/5 max-w-3xl">To leverage my expertise in full stack development to create innovative and efficient solutions that drive business success and enhance user experiences.</p>
-    </section>
+        <p class="text-lg md:text-xl objective-text mb-6">Highly motivated and skilled Full Stack Developer seeking a challenging career opportunity that will leverage my technical expertise in backend and frontend development. I am eager to contribute to innovative projects, enhance my analytical skills, and further develop my knowledge in software development.</p>
+    </div>
 
     <!-- Experience Section -->
     <section class="experience py-20 px-4" id="experience">
@@ -219,14 +236,14 @@
     <!-- GSAP and ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-     <script>
+    <script>
         gsap.registerPlugin(ScrollTrigger);
 
         // Header Animation
         gsap.from(".header", { y: -100, opacity: 0, duration: 1, ease: "power3.out" });
 
         // Hero Animation
-        gsap.from(".hero h1, .hero p, .hero .cta-btn", {
+        gsap.from(".hero h1, .hero p, .hero img, .hero .objective-text, .hero .cta-btn", {
             y: 100,
             opacity: 0,
             duration: 1.5,
